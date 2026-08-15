@@ -13,10 +13,7 @@ export default async function Home() {
       <Hero />
       <Intro />
       <Process />
-
-      <Experiences
-        experiences={featuredExperiences}/>
-
+      <Experiences experiences={featuredExperiences}/>
       <CTA />
     </>
   );
