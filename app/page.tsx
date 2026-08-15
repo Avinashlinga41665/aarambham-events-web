@@ -1,20 +1,22 @@
-
 import Hero from "@/components/Hero";
 import Intro from "@/components/Intro";
-import Services from "@/components/Services";
 import Process from "@/components/Process";
 import Experiences from "@/components/Experiences";
 import CTA from "@/components/CTA";
+import { getFeaturedExperiences } from "@/lib/experiences";
 
-export default function Home() {
+export default async function Home() {
+  const featuredExperiences = await getFeaturedExperiences();
+
   return (
     <>
- 
       <Hero />
       <Intro />
-      <Services />
       <Process />
-      <Experiences />
+
+      <Experiences
+        experiences={featuredExperiences}/>
+
       <CTA />
     </>
   );

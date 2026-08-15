@@ -6,20 +6,20 @@ const services = [
   {
     title: "Corporate Events",
     text: "Conferences, launches, annual celebrations & office experiences.",
-    image:
-      "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=1200&q=85",
+    image:"https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=1200&q=85",
+    href: "/corporate",
   },
   {
     title: "Celebrations",
     text: "Birthdays, anniversaries, private parties & unforgettable moments.",
-    image:
-      "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=1200&q=85",
+    image:"https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=1200&q=85",
+    href: "/celebrations",
   },
   {
     title: "Traditional Events",
     text: "Haldi, bridal celebrations, ceremonies & beautifully styled traditions.",
-    image:
-      "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=85",
+    image:"https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=85",
+    href: "/traditional",
   },
 ];
 
@@ -45,8 +45,9 @@ export default function Services() {
         {/* Service Cards */}
         <div className="grid gap-5 md:grid-cols-3">
           {services.map((service, index) => (
-            <motion.div
+            <motion.a
               key={service.title}
+              href={service.href}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -82,7 +83,7 @@ export default function Services() {
                   →
                 </span>
               </div>
-            </motion.div>
+            </motion.a>
           ))}
         </div>
 

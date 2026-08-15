@@ -84,12 +84,6 @@ export default function Hero() {
           </div>
         </motion.div>
       </div>
-
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-6 z-10 flex items-center gap-3 text-[9px] uppercase tracking-[0.3em] text-beige-light/70 lg:left-10">
-        <span className="h-8 w-px bg-gold" />
-        Scroll to explore
-      </div>
     </section>
   );
 }
