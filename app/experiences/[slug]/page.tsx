@@ -2,7 +2,6 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 
 import { getExperienceBySlug } from "@/lib/experiences";
 

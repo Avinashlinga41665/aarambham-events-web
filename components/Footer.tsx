@@ -99,6 +99,25 @@ export default function Footer() {
       <div className="mx-auto mt-14 max-w-7xl border-t border-gold/20 pt-6 text-[9px] uppercase tracking-[0.15em] text-beige-light/35">
         © 2026 Aarambham Events & Experiences. All rights reserved.
       </div>
+
+      {/* Codeweave Credit */}
+          <div className="mt-8 text-center">
+
+            <p className="text-[8px] uppercase tracking-[0.3em] text-beige-light/30">
+              Designed & Developed By
+            </p>
+
+            <a href="https://myportfolio-rouge-zeta.vercel.app/" target="_blank" rel="noopener noreferrer" className="inline-block mt-2">
+              <h4 className="mt-1 inline-block font-serif text-m tracking-[0.12em] text-gold-light transition hover:text-beige-light">
+                Codeweave
+              </h4>
+            </a>
+
+            <p className="text-beige-light/30 text-sm mt-2">
+              Crafting modern digital experiences.
+            </p>
+
+          </div>
     </footer>
   );
 }
